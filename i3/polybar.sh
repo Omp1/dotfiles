@@ -3,7 +3,8 @@
 # Check if polybar is already running
 SERVICE="polybar"
 
-if ps ax | grep -v grep | grep -v "polybar.sh" | grep $SERVICE > /dev/null
+#if ps ax | grep -v grep | grep -v "spotify_status.py" | grep -v "polybar.sh" | grep $SERVICE > /dev/null
+if ps ax | grep -vE "grep|spotify_status.py|polybar.sh|config" | grep $SERVICE > /dev/null
 then
   echo "polybar already running! Please kill it first."
   exit 0;
