@@ -16,7 +16,7 @@ exec --no-startup-id xrandr --dpi 60 --output DVI-D-0 --off --output HDMI-0 --pr
 
 
 #####   DEPENDANCIES   #####
-# Menu		:  dmenu
+# Menu		:  dmenu,rofi
 # Bar		:  i3blocks, polybar
 # Background	:  feh
 # Console	:  konsole, kitty
